@@ -4,3 +4,5 @@ sudo: required
 
 php:
   - 7.1
+
+fast_finish: true  
