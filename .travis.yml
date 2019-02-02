@@ -3,6 +3,11 @@ language: php
 sudo: required
 
 php:
-  - 7.1
+  - "7.1"
 
- 
+python:
+  - "3.7"
+
+cache: pip
+# command to run tests
+script: pytest.py
