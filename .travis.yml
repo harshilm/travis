@@ -10,6 +10,7 @@ python:
 
 cache: pip
 before_install:
+  - sudo apt-get update
   - sudo apt-get install python3.7
   - python -V
 # command to run tests
