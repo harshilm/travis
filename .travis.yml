@@ -10,8 +10,8 @@ python:
 
 cache: pip
 before_install:
-  - sudo apt-get install python3.6
-  - python3 -V
+  - sudo apt-get install python3.7
+  - python -V
 # command to run tests
 script: 
   - verify.py
