@@ -16,7 +16,6 @@ before_install:
   - sudo pip install --upgrade pip
   - sudo pip install selenium
   - sudo pip install bs4
-  - sudo pip install sleep
   - unzip https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip -d destination_folder
 
 # command to run tests
