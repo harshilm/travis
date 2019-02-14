@@ -7,7 +7,7 @@ import requests, bs4
 target_url = 'https://www.pfizerpro.co.uk'
 options = Options()
 options.add_argument("--headless")
-browser = webdriver.Chrome(chrome_options=options, executable_path="C:\\HCP\\Travis\\travis\\chromedriver.exe")
+browser = webdriver.Chrome(chrome_options=options, executable_path="/home/travis/build/harshilm/travis/chromedriver")
 browser.get(target_url)
 sleep(1)
 try:
