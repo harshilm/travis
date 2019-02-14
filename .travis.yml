@@ -10,8 +10,14 @@ python:
 
 cache: pip
 before_install:
+  - sudo apt-get install unzip
   - sudo apt-get -y install python3-pip python-dev
   - python -V
+  - sudo pip install selenium
+  - sudo pip install bs4
+  - sudo pip install sleep
+  - unzip https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip -d destination_folder
+
 # command to run tests
 script: 
   - python verify.py
