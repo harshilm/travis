@@ -18,5 +18,5 @@ before_install:
   - unzip chromedriver_linux64.zip
 # command to run tests
 script: 
-  - sudo pip install selenium
+  - python --version
   - python3 verify.py
