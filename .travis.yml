@@ -12,7 +12,7 @@ before_install:
   - sudo apt-get update
   - python3 --version
   - sudo pip install --upgrade pip
-  - sudo pip install selenium
+  - sudo pip install -U selenium
   - sudo pip install bs4
   - sudo pip install requests
   - wget https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip --no-check-certificate
