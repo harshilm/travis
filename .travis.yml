@@ -18,5 +18,5 @@ before_install:
   - unzip chromedriver_linux64.zip
 # command to run tests
 script: 
-  - python --version
-  - python3 verify.py
+  - python2.7 --version
+  - python2.7 verify.py
