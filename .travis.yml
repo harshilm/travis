@@ -9,7 +9,7 @@ dist: xenial
 
 before_install:
   - sudo apt-get update
-  - sudo install unzip
+  - sudo apt-get install unzip
   - sudo pip install --upgrade pip
   - sudo pip install -U selenium
   - sudo pip install bs4
