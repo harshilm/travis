@@ -14,9 +14,8 @@ before_install:
   - sudo pip install -U selenium
   - sudo pip install bs4
   - sudo pip install requests
-  - wget https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip --no-check-certificate
+  - wget https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_linux64.zip --no-check-certificate
   - unzip chromedriver_linux64.zip
 # command to run tests
 script: 
-  - python2.7 --version
   - python2.7 verify.py
