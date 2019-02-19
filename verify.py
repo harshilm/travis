@@ -1,11 +1,11 @@
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 from time import sleep
 import requests, bs4
 
 target_url = 'https://www.pfizerpro.co.uk'
-options = Options()
+options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--no-sandbox")
