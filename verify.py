@@ -8,7 +8,9 @@ target_url = 'https://www.pfizerpro.co.uk'
 options = Options()
 options.add_argument("--headless")
 options.add_argument("--disable-dev-shm-usage")
-browser = webdriver.Chrome(chrome_options=options, executable_path="/home/travis/build/harshilm/travis/chromedriver")
+options.add_argument("--no-sandbox")
+
+browser = webdriver.Chrome(executable_path="/home/travis/build/harshilm/travis/chromedriver", options=options)
 browser.get(target_url)
 sleep(1)
 try:
