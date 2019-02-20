@@ -3,7 +3,6 @@ from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.chrome.options import Options
 from time import sleep
 import requests, bs4
-import pandas as pd
   
 target_url = 'https://www.pfizerpro.co.uk' #starting url
 
@@ -29,7 +28,7 @@ def findalllinks (url):
 
 # Visit the page
 def pagehits(url):
-    global HTML_string
+   
     report = []
     #visit the page in a headless version of firefox
     options = webdriver.ChromeOptions()
