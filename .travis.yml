@@ -20,4 +20,4 @@ before_install:
   - ls -al
 # command to run tests
 script: 
-  - python2.7 test.py
+  - python2.7 verify.py
